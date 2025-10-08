@@ -27,8 +27,6 @@ void update_grade(Student *s, int new_grade) {
     // TODO: Implement to update the grade
     // Hint: Use the arrow operator -> to access and modify the grade member of the struct.
 
-    // Placeholder
-    printf("update_grade not implemented.\n");
 }
 
 int main() {
@@ -43,9 +41,6 @@ int main() {
 
     update_grade(&student, 90);
     printf("Updated: Name: %s, Grade: %d\n", student.name, student.grade);
-
-    // Placeholder output
-    printf("update_grade implemented.\n");
 
     return 0;
 }
