@@ -19,14 +19,14 @@
 int main() {
     
     printf("Exercise 1: Basic Float Pointer\n");
-    float x = 2.5f;
+    float x = 25.5f;
     float *p = &x;
     
     printf ("Value of x: %.1f\n", x);
     printf ("Address of x: %p\n", (void*)&x);
     printf ("Value of p (address): %p\n", (void*)p);
     printf ("Value at p (*p): %.1ff\n", *p);
-    *p = 3.3f;
+    *p = 30.0f;
     printf ("New value of x: %.1f\n", x);
     // Hint: Remember to use & for addresses and * for dereferencing. Declare a float, point to it, print value and address, modify via pointer, print again.
 
