@@ -21,34 +21,40 @@
  */
 
 #include <stdio.h>
-// TODO: Include <stdlib.h>
+#include <stdlib.h>
 
 int main() {
     int n;
-    // TODO: scanf("%d", &n);
-
-    // Placeholder n for testing
-    n = 0; // Replace with actual read
+    
+    printf ("Enter array size: ");
+    scanf("%d", &n);
 
     if (n <= 0) {
         printf("Invalid size. Use positive integer.\n");
         return 1;
     }
 
-    // TODO: int *arr = malloc(n * sizeof(int));
-    // if (arr == NULL) { printf("Allocation failed!\n"); return 1; }
+    int *arr = malloc(n * sizeof(int));
+    if (arr == NULL) { 
+    printf("Allocation failed!\n"); 
+    return 1; 
+}
+    
+    for (int i = 0; i < n; i++) {
+    	arr[i] = i + 1;
+    
+}
 
-    int *arr = NULL; // Placeholder
+    int sum = 0;
+    for(int i = 0; i < n; i++) {
 
-    // TODO: Fill array: for(int i = 0; i < n; i++) arr[i] = i + 1;
+    	sum += arr[i];
 
-    // TODO: Sum: int sum = 0; for(int i = 0; i < n; i++) sum += arr[i];
-
-    int sum = 0; // Placeholder
+}
 
     printf("Sum: %d\n", sum);
 
-    // TODO: free(arr);
+    free(arr);
 
     return 0;
 }
