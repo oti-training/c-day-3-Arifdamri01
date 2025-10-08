@@ -28,7 +28,7 @@ int main() {
     printf ("Value at p (*p): %.1f\n", *p);
     *p = 30.0f;
     printf ("New value of x: %.1f\n", x);
-    
+    printf ("Correct implementation!\n");
     
     return 0;
 }
